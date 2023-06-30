@@ -11,7 +11,7 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          projectPath: Productive Addiction/
+          projectPath: \Productive Addiction
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       
