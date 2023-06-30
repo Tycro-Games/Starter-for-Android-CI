@@ -9,10 +9,9 @@ jobs:
     name: Tests licence
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        uses: game-ci/unity-test-runner@v2
-        
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+    - name: Unity - Activate
+      uses: game-ci/unity-activate@v2.0.0
+
+
 
       
