@@ -1,6 +1,9 @@
 name: Testing
-on:
-  workflow_dispatch: {}
+on: push
+
+env:
+    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          
 jobs:
   test:
     name: Tests licence
@@ -8,10 +11,8 @@ jobs:
     steps:
       - name: test
         uses: game-ci/unity-test-runner@v2
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        
         with:
-          projectPath: /ProductiveAddiction
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       
