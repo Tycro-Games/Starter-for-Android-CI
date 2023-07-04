@@ -4,8 +4,6 @@ on: push
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-  ITCH_USERNAME: tycro-games
-  ITCH_GAME_ID: lunar-voyage-moon-colonization
 jobs:
   testRunner:
     name: Test in ${{ matrix.testMode }} ✨
