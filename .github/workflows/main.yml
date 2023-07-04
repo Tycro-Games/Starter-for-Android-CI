@@ -16,7 +16,7 @@ jobs:
           - PlayMode
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Create LFS file list
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
@@ -57,7 +57,7 @@ jobs:
      name: Build For Android Platform
      runs-on: ubuntu-latest
      steps:
-       - uses: actions/checkout@v2
+       - uses: actions/checkout@v3
        - uses: actions/cache@v2
          with:
            path: Library
@@ -87,7 +87,7 @@ jobs:
           ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
         steps:
         - name: Checkout Repository
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
         - name: Download Android Artifact
           uses: actions/download-artifact@v2
           with:
