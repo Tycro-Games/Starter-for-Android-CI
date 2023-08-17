@@ -1,6 +1,6 @@
 
 public struct Card
 {
-    string name;
-    int points;
+    public string name;
+    public int points;
 }

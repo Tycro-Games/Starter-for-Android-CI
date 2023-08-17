@@ -6,15 +6,6 @@
             "id": "683f8f50-ffc7-4efa-bb61-74c4a848e5e2",
             "actions": [
                 {
-                    "name": "Jump",
-                    "type": "Value",
-                    "id": "49f8167b-4994-47b8-9b48-5c9c51f9b3e0",
-                    "expectedControlType": "Touch",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "Move",
                     "type": "Button",
                     "id": "2304acd6-43c3-48b3-8222-4ae6b6d1c82c",
@@ -25,28 +16,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "1D Axis",
-                    "id": "60b1c0a3-f603-4bfa-90e0-55bd5ac8d6f0",
-                    "path": "1DAxis(minValue=0,whichSideWins=2)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "positive",
-                    "id": "be36d47a-d81b-40af-a80e-683189149c31",
-                    "path": "<Touchscreen>/primaryTouch/delta/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Mobile",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
                 {
                     "name": "LeftRight",
                     "id": "c1022e21-c4bd-4b96-8ff3-17bce0103d33",

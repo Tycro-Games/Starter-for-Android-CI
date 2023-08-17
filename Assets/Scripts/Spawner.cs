@@ -8,7 +8,7 @@ namespace Assets.Scripts
 
         public void SpawnGameObject()
         {
-            Instantiate(instance, transform.position, transform.rotation, transform);
+            Instantiate(instance, transform.position, transform.rotation);
         }
     }
 }

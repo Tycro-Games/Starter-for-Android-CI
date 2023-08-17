@@ -12,17 +12,14 @@ public class PlayerMovement : MonoBehaviour
     private bool jumping = false;
     private float horizontalMove = 0.0f;
 
+    private bool startedJump = false;
     [SerializeField] private float runSpeed = 40.0f;
     void Start()
     {
         characterController = GetComponent<CharacterController2D>();
     }
 
-    public void Jump(InputAction.CallbackContext ctx)
-    {
-        //add jumping
 
-    }
     public void Move(InputAction.CallbackContext ctx)
     {
         horizontalMove = ctx.ReadValue<float>() * runSpeed;
@@ -33,9 +30,9 @@ public class PlayerMovement : MonoBehaviour
         if (jumping)
             Debug.Log(jumping);
 
-        characterController.Move(horizontalMove * Time.fixedDeltaTime, false, jumping);
+        characterController.Move(horizontalMove * Time.fixedDeltaTime, false, startedJump);
+        startedJump = false;
         jumping = false;
-
 
     }
 }
