@@ -103,7 +103,7 @@ jobs:
         - name: Upload to Google Play beta
           uses: maierj/fastlane-action@v2.0.1
           with:
-           lane: 'android beta'
+           lane: 'android internal'
         - name: Cleanup to avoid storage limit
           if: always()
           uses: geekyeggo/delete-artifact@v1
